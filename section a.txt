@@ -1,0 +1,9 @@
+Strings are mostly used in the javascript language.they are witten in double apostrophe,e.g "name"
+Arrays are groups of objects also used in javascript. The different types of arrays are:
+array.splice()
+array.push()
+array.pop()
+array.split()
+array.map()
+array.length()
+array.concat()

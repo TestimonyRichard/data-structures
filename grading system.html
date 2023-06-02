@@ -1,0 +1,47 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grading system</title>
+</head>
+<body>
+    <input type="text" placeholder="Input your score" id="score">
+    <button onclick="grader()">Grade</button>
+    <div id="result"></div>
+    <script>
+   function grader(){
+    var myScore = score.value
+    if ( myScore <= 0){
+            result.innerText = "Input your score 👆👆✍✍";
+            result.style.color ="pink";
+            
+
+          } else if ( myScore <= 39 ) {                 
+            result.innerText = "FAIL 🙇‍♀️🤦‍♀️😪";
+            result.style.color = "RED";
+
+          } else if ( myScore > 39 && myScore <=49) {
+        result.innerText = "PASS 😑😶😒😕";
+        result.style.color = "purple";
+          } else if ( myScore > 49 && myScore <=55) {
+        result.innerText = "GOOD 😊😀";
+        result.style.color = "yellow";
+        }   else if ( myScore > 55 && myScore <=69) {
+        result.innerText = " VERY GOOD 👍✔✔";
+        result.style.color = "green";
+        }  else if ( myScore > 69 && myScore <=75) {
+        result.innerText = " EXCELLENT 👏👏🤩";
+        result.style.color = "blue";
+        } else if ( myScore >75 && myScore <=100 ) {
+          result.innerText = "DISTINCTION 🎇🎆✨🎊🎀🎗";
+          result.style.color = "orange";
+        } else if ( typeof myScore === "string") {
+          result.innerText = " SCORES CANNOT BE IN LETTERS !!!! 💁‍♀️🤷‍♂️💁‍♂️";
+          result.style.color = "red"
+
+        }
+   }
+    </script>
+</body>
+</html>

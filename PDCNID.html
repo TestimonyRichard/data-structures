@@ -1,0 +1,36 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> PDC?NID</title>
+</head>
+<body>
+    <input type="text" id="myInput">
+    <button onclick="checkDept()">PDC/NID</button>
+    <div id="disp"></div>
+   <script>
+    function checkDept(){
+        for (let i = 1; i <= 100; i++) {
+        //  console.log(i)
+         if (myInput.value%3==0) {
+            disp.innerHTML=`PDC`
+            
+        } else if (myInput.value%5==0){
+            disp.innerHTML=`NID`
+            // console.log(i+"NID")
+        }else if (myInput.value%3==0&&myInput.value%5==0){
+            disp.innerHTML=`PDCNID`
+            // console.log(i+"PDCNID")
+        } else{
+            disp.innerHTML=` Neither PDC nor NID`
+            // console.log("Neither PDC nor NID")
+        }
+        }
+       
+    }
+
+   </script>
+    
+</body>
+</html>
